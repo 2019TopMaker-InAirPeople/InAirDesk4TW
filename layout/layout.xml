@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document>
+	<mscreen>
+		<configuration device="CIRCLE_360x360" id="config1"
+			name="common" orientation="portrait" type="common" />
+	</mscreen>
+	<views startup="datetime_view">
+		<view id="view1" indicator="true" type="view" page_location_x="0"
+			page_location_y="1200">
+			<grid align_h="fill" align_v="fill" id="grid1" visible="true"
+				vsize_h="1000" vsize_w="1000" weight_h="1" weight_v="1">
+				<button align_h="fill" align_v="fill" disable="false" id="button1"
+					pack_h="80" pack_w="800" pack_x="100" pack_y="850" style="bottom"
+					text="Next" data_bind="" visible="true" weight_h="1" weight_v="1">
+					<event connection_wrapper="connection_view1_button1_onclicked"
+						event_name="clicked" function_name="view1_button1_onclicked"
+						signal="clicked" target="view2" />
+				</button>
+				<box align_v="fill" visible="true" weight_v="1" pack_h="435"
+					padding_h="0" weight_h="1" homogeneous="false" align_h="fill"
+					pack_w="1000" pack_x="0" pack_y="265" padding_v="0" id="box1"
+					direction="vertical">
+					<label align_h="0.5" wrap_width="0" align_v="0.5" visible="true"
+						weight_v="1" line_wrap="none" id="label1" text="First View"
+						data_bind="" weight_h="1" ellipsis="false"></label>
+				</box>
+			</grid>
+		</view>
+		<view id="view2" indicator="true" type="view" page_location_x="600"
+			page_location_y="1200">
+			<grid align_h="fill" align_v="fill" id="grid1" visible="true"
+				vsize_h="1000" vsize_w="1000" weight_h="1" weight_v="1">
+				<button align_h="fill" align_v="fill" disable="false" id="button1"
+					pack_h="80" pack_w="800" pack_x="100" pack_y="100" style="bottom"
+					text="Previous" data_bind="" visible="true" weight_h="1" weight_v="1">
+					<event connection_wrapper="connection_view2_button1_onclicked"
+						event_name="clicked" function_name="view2_button1_onclicked"
+						signal="clicked" target="view1" />
+				</button>
+				<button align_h="fill" align_v="fill" disable="false" id="button2"
+					pack_h="80" pack_w="800" pack_x="100" pack_y="850" style="bottom"
+					text="Next" data_bind="" visible="true" weight_h="1" weight_v="1">
+					<event connection_wrapper="connection_view2_button2_onclicked"
+						event_name="clicked" function_name="view2_button2_onclicked"
+						signal="clicked" target="view3" />
+				</button>
+				<box align_v="fill" visible="true" weight_v="1" pack_h="435"
+					padding_h="0" weight_h="1" homogeneous="false" align_h="fill"
+					pack_w="1000" pack_x="0" pack_y="265" padding_v="0" id="box1"
+					direction="vertical">
+					<label align_h="0.5" wrap_width="0" align_v="0.5" visible="true"
+						weight_v="1" line_wrap="none" id="label1" text="Second View"
+						data_bind="" weight_h="1" ellipsis="false"></label>
+				</box>
+			</grid>
+		</view>
+		<view id="view3" indicator="true" type="view" page_location_x="1200"
+			page_location_y="1200">
+			<grid align_h="fill" align_v="fill" id="grid1" visible="true"
+				vsize_h="1000" vsize_w="1000" weight_h="1" weight_v="1">
+				<button align_h="fill" align_v="fill" disable="false" id="button1"
+					pack_h="80" pack_w="800" pack_x="100" pack_y="100" style="bottom"
+					text="Previous" data_bind="" visible="true" weight_h="1" weight_v="1">
+					<event connection_wrapper="connection_view3_button1_onclicked"
+						event_name="clicked" function_name="view3_button1_onclicked"
+						signal="clicked" target="view2" />
+				</button>
+				<box align_v="fill" visible="true" weight_v="1" pack_h="435"
+					padding_h="0" weight_h="1" homogeneous="false" align_h="fill"
+					pack_w="1000" pack_x="0" pack_y="265" padding_v="0" id="box1"
+					direction="vertical">
+					<label align_h="0.5" wrap_width="0" align_v="0.5" visible="true"
+						weight_v="1" line_wrap="none" id="label1" text="Third View"
+						data_bind="" weight_h="1" ellipsis="false"></label>
+				</box>
+			</grid>
+		</view>
+
+
+
+
+		<view id="datetime_view" indicator="true" type="view"
+			page_location_x="0" page_location_y="0">
+			<grid align_h="fill" align_v="fill" id="datetime_grid" visible="true"
+				vsize_h="1000" vsize_w="1000" weight_h="1" weight_v="1">
+				<button align_h="fill" align_v="fill" disable="false"
+					id="dtv_previous_button" pack_h="80" pack_w="800" pack_x="100"
+					pack_y="100" style="bottom" text="Previous" data_bind="" visible="true"
+					weight_h="1" weight_v="1">
+				<event connection_wrapper="connection_datetime_view_dtv_previous_button_onclicked" function_name="datetime_view_dtv_previous_button_onclicked" signal="clicked" target="deskstatus_view" /></button>
+				<box align_v="fill" visible="true" weight_v="1" pack_h="435"
+					padding_h="0" weight_h="1" homogeneous="false" align_h="fill"
+					pack_w="1000" pack_x="0" pack_y="265" padding_v="0" id="datetime_box"
+					direction="vertical">
+					<label align_h="0.5" wrap_width="0" align_v="0.5" visible="true"
+						weight_v="1" line_wrap="none" id="label1" text="DateTime View"
+						data_bind="" weight_h="1" ellipsis="false"></label>
+				</box>
+				<button align_h="fill" align_v="fill" disable="false"
+					id="dtv_next_button" pack_h="80" pack_w="800" pack_x="100" pack_y="850"
+					style="bottom" text="Next" data_bind="" visible="true" weight_h="1"
+					weight_v="1">
+				<event connection_wrapper="connection_datetime_view_dtv_next_button_onclicked" function_name="datetime_view_dtv_next_button_onclicked" signal="clicked" target="finedust_view" /></button>
+			</grid>
+		</view>
+
+		<view id="finedust_view" indicator="true" type="view"
+			page_location_x="600" page_location_y="0">
+			<grid align_h="fill" align_v="fill" id="finedust_grid" visible="true"
+				vsize_h="1000" vsize_w="1000" weight_h="1" weight_v="1">
+				<button align_h="fill" align_v="fill" disable="false"
+					id="fdv_previous_button" pack_h="80" pack_w="800" pack_x="100"
+					pack_y="100" style="bottom" text="Previous" data_bind="" visible="true"
+					weight_h="1" weight_v="1">
+				<event connection_wrapper="connection_finedust_view_fdv_previous_button_onclicked" function_name="finedust_view_fdv_previous_button_onclicked" signal="clicked" target="datetime_view" /></button>
+				<box align_v="fill" visible="true" weight_v="1" pack_h="435"
+					padding_h="0" weight_h="1" homogeneous="false" align_h="fill"
+					pack_w="1000" pack_x="0" pack_y="265" padding_v="0" id="finedust_box"
+					direction="vertical">
+					<label align_h="0.5" wrap_width="0" align_v="0.5" visible="true"
+						weight_v="1" line_wrap="none" id="label1" text="FineDust View"
+						data_bind="" weight_h="1" ellipsis="false"></label>
+				</box>
+				<button align_h="fill" align_v="fill" disable="false"
+					id="fdv_next_button" pack_h="80" pack_w="800" pack_x="100" pack_y="850"
+					style="bottom" text="Next" data_bind="" visible="true" weight_h="1"
+					weight_v="1">
+				<event connection_wrapper="connection_finedust_view_fdv_next_button_onclicked" function_name="finedust_view_fdv_next_button_onclicked" signal="clicked" target="deskstatus_view" /></button>
+			</grid>
+		</view>
+
+		<view id="deskstatus_view" indicator="true" type="view"
+			page_location_x="1200" page_location_y="0">
+			<grid align_h="fill" align_v="fill" id="deskstatus_grid"
+				visible="true" vsize_h="1000" vsize_w="1000" weight_h="1" weight_v="1">
+				<button align_h="fill" align_v="fill" disable="false"
+					id="dsv_previous_button" pack_h="80" pack_w="800" pack_x="100"
+					pack_y="100" style="bottom" text="Previous" data_bind="" visible="true"
+					weight_h="1" weight_v="1">
+				<event connection_wrapper="connection_deskstatus_view_dsv_previous_button_onclicked" function_name="deskstatus_view_dsv_previous_button_onclicked" signal="clicked" target="finedust_view" /></button>
+				<box align_v="fill" visible="true" weight_v="1" pack_h="435"
+					padding_h="0" weight_h="1" homogeneous="false" align_h="fill"
+					pack_w="1000" pack_x="0" pack_y="265" padding_v="0" id="deskstatus_box"
+					direction="vertical">
+					<label align_h="0.5" wrap_width="0" align_v="0.5" visible="true"
+						weight_v="1" line_wrap="none" id="label1" text="DeskStatus View"
+						data_bind="" weight_h="1" ellipsis="false"></label>
+				</box>
+				<button align_h="fill" align_v="fill" disable="false"
+					id="dsv_next_button" pack_h="80" pack_w="800" pack_x="100" pack_y="850"
+					style="bottom" text="Next" data_bind="" visible="true" weight_h="1"
+					weight_v="1">
+				<event connection_wrapper="connection_deskstatus_view_dsv_next_button_onclicked" function_name="deskstatus_view_dsv_next_button_onclicked" signal="clicked" target="datetime_view" /></button>
+			</grid>
+		</view>
+
+	</views>
+</document>

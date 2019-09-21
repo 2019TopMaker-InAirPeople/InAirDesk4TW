@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="4.0"
+	package="com.inairpeople.inairdesk4tw" version="1.0.0">
+	<profile name="wearable" />
+	<ui-application appid="com.inairpeople.inairdesk4tw" exec="inairdesk4tw"
+		type="capp" multiple="false" taskmanage="true" nodisplay="false">
+		<icon>inairdesk4tw.png</icon>
+		<label>inairdesk4tw</label>
+	</ui-application>
+</manifest>
