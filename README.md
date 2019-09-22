@@ -24,5 +24,8 @@
 * Tizen Wearable(Galaxy Watch Active 2) : 목업제품 구현, https://github.com/InAirPeople-Inc/InAirDesk4TW.git
 
 ## 구현사항
-* User Interface
+* 프로토콜 사용하지 않음
+* 클라우드 사용하지 않음
+* 카메라 사용하지 않음
+* 이미지 분석 사용하지 않음
   
