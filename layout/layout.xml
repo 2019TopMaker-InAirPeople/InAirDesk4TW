@@ -85,22 +85,29 @@
 				vsize_h="1000" vsize_w="1000" weight_h="1" weight_v="1">
 				<button align_h="fill" align_v="fill" disable="false"
 					id="dtv_previous_button" pack_h="80" pack_w="800" pack_x="100"
-					pack_y="100" style="bottom" text="Previous" data_bind="" visible="true"
+					pack_y="100" style="bottom" text="책상상태" data_bind="" visible="true"
 					weight_h="1" weight_v="1">
-				<event connection_wrapper="connection_datetime_view_dtv_previous_button_onclicked" function_name="datetime_view_dtv_previous_button_onclicked" signal="clicked" target="deskstatus_view" /></button>
+					<event connection_wrapper="connection_datetime_view_dtv_previous_button_onclicked"
+						function_name="datetime_view_dtv_previous_button_onclicked"
+						signal="clicked" target="deskstatus_view" />
+				</button>
 				<box align_v="fill" visible="true" weight_v="1" pack_h="435"
 					padding_h="0" weight_h="1" homogeneous="false" align_h="fill"
 					pack_w="1000" pack_x="0" pack_y="265" padding_v="0" id="datetime_box"
 					direction="vertical">
-					<label align_h="0.5" wrap_width="0" align_v="0.5" visible="true"
-						weight_v="1" line_wrap="none" id="label1" text="DateTime View"
-						data_bind="" weight_h="1" ellipsis="false"></label>
+					<image resizable_up="true" resizable_down="true" align_v="fill"
+						visible="true" weight_v="1" weight_h="1" align_h="fill"
+						aspect_fixed="false" no_scale="false" id="datetime_img"
+						fill_outside="false" src="datetime_img.png"></image>
 				</box>
 				<button align_h="fill" align_v="fill" disable="false"
 					id="dtv_next_button" pack_h="80" pack_w="800" pack_x="100" pack_y="850"
-					style="bottom" text="Next" data_bind="" visible="true" weight_h="1"
+					style="bottom" text="미세먼지" data_bind="" visible="true" weight_h="1"
 					weight_v="1">
-				<event connection_wrapper="connection_datetime_view_dtv_next_button_onclicked" function_name="datetime_view_dtv_next_button_onclicked" signal="clicked" target="finedust_view" /></button>
+					<event connection_wrapper="connection_datetime_view_dtv_next_button_onclicked"
+						function_name="datetime_view_dtv_next_button_onclicked" signal="clicked"
+						target="finedust_view" />
+				</button>
 			</grid>
 		</view>
 
@@ -110,22 +117,29 @@
 				vsize_h="1000" vsize_w="1000" weight_h="1" weight_v="1">
 				<button align_h="fill" align_v="fill" disable="false"
 					id="fdv_previous_button" pack_h="80" pack_w="800" pack_x="100"
-					pack_y="100" style="bottom" text="Previous" data_bind="" visible="true"
+					pack_y="100" style="bottom" text="시간" data_bind="" visible="true"
 					weight_h="1" weight_v="1">
-				<event connection_wrapper="connection_finedust_view_fdv_previous_button_onclicked" function_name="finedust_view_fdv_previous_button_onclicked" signal="clicked" target="datetime_view" /></button>
+					<event connection_wrapper="connection_finedust_view_fdv_previous_button_onclicked"
+						function_name="finedust_view_fdv_previous_button_onclicked"
+						signal="clicked" target="datetime_view" />
+				</button>
 				<box align_v="fill" visible="true" weight_v="1" pack_h="435"
 					padding_h="0" weight_h="1" homogeneous="false" align_h="fill"
 					pack_w="1000" pack_x="0" pack_y="265" padding_v="0" id="finedust_box"
 					direction="vertical">
-					<label align_h="0.5" wrap_width="0" align_v="0.5" visible="true"
-						weight_v="1" line_wrap="none" id="label1" text="FineDust View"
-						data_bind="" weight_h="1" ellipsis="false"></label>
+					<image resizable_up="true" resizable_down="true" align_v="fill"
+						visible="true" weight_v="1" weight_h="1" align_h="fill"
+						aspect_fixed="false" no_scale="false" id="finedust_img"
+						fill_outside="false" src="finedust_img.png"></image>
 				</box>
 				<button align_h="fill" align_v="fill" disable="false"
 					id="fdv_next_button" pack_h="80" pack_w="800" pack_x="100" pack_y="850"
-					style="bottom" text="Next" data_bind="" visible="true" weight_h="1"
+					style="bottom" text="책상상태" data_bind="" visible="true" weight_h="1"
 					weight_v="1">
-				<event connection_wrapper="connection_finedust_view_fdv_next_button_onclicked" function_name="finedust_view_fdv_next_button_onclicked" signal="clicked" target="deskstatus_view" /></button>
+					<event connection_wrapper="connection_finedust_view_fdv_next_button_onclicked"
+						function_name="finedust_view_fdv_next_button_onclicked" signal="clicked"
+						target="deskstatus_view" />
+				</button>
 			</grid>
 		</view>
 
@@ -135,22 +149,29 @@
 				visible="true" vsize_h="1000" vsize_w="1000" weight_h="1" weight_v="1">
 				<button align_h="fill" align_v="fill" disable="false"
 					id="dsv_previous_button" pack_h="80" pack_w="800" pack_x="100"
-					pack_y="100" style="bottom" text="Previous" data_bind="" visible="true"
+					pack_y="100" style="bottom" text="미세먼지" data_bind="" visible="true"
 					weight_h="1" weight_v="1">
-				<event connection_wrapper="connection_deskstatus_view_dsv_previous_button_onclicked" function_name="deskstatus_view_dsv_previous_button_onclicked" signal="clicked" target="finedust_view" /></button>
+					<event connection_wrapper="connection_deskstatus_view_dsv_previous_button_onclicked"
+						function_name="deskstatus_view_dsv_previous_button_onclicked"
+						signal="clicked" target="finedust_view" />
+				</button>
 				<box align_v="fill" visible="true" weight_v="1" pack_h="435"
 					padding_h="0" weight_h="1" homogeneous="false" align_h="fill"
 					pack_w="1000" pack_x="0" pack_y="265" padding_v="0" id="deskstatus_box"
 					direction="vertical">
-					<label align_h="0.5" wrap_width="0" align_v="0.5" visible="true"
-						weight_v="1" line_wrap="none" id="label1" text="DeskStatus View"
-						data_bind="" weight_h="1" ellipsis="false"></label>
+					<image resizable_up="true" resizable_down="true" align_v="fill"
+						visible="true" weight_v="1" weight_h="1" align_h="fill"
+						aspect_fixed="false" no_scale="false" id="deskstatus_img"
+						fill_outside="false" src="deskstatus_img.png"></image>
 				</box>
 				<button align_h="fill" align_v="fill" disable="false"
 					id="dsv_next_button" pack_h="80" pack_w="800" pack_x="100" pack_y="850"
-					style="bottom" text="Next" data_bind="" visible="true" weight_h="1"
+					style="bottom" text="시간" data_bind="" visible="true" weight_h="1"
 					weight_v="1">
-				<event connection_wrapper="connection_deskstatus_view_dsv_next_button_onclicked" function_name="deskstatus_view_dsv_next_button_onclicked" signal="clicked" target="datetime_view" /></button>
+					<event connection_wrapper="connection_deskstatus_view_dsv_next_button_onclicked"
+						function_name="deskstatus_view_dsv_next_button_onclicked" signal="clicked"
+						target="datetime_view" />
+				</button>
 			</grid>
 		</view>
 
